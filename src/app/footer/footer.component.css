@@ -1,0 +1,21 @@
+#footer-container {
+  display: flex;
+  justify-content: space-around;
+  height: 10em;
+  width: 100%;
+  background-color: #FF9800;
+  padding-top: 2em;
+  opacity: 0.9;
+}
+
+div#footer-menu, div#legal-information, div#footer-contacts {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+p {
+  color: #3c3c3c;
+  margin-bottom: 0.5em;
+}
+

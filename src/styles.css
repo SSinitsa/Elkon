@@ -1,1 +1,120 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~https://fonts.googleapis.com/icon?family=Roboto";
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-in-out;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+body {
+  font-family: 'Roboto', arial, sans-serif;
+  line-height: 1;
+  color: #373737;
+  background: white;
+}
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Global flex settings */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  max-width: 1000000em;
+  max-height: 1000000em;
+}
+
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #navigation a {
+    width: 16%;
+  }
+
+}
+
+@media screen and (min-width : 768px) and (max-width: 1024px) {
+  body {
+    font-size:75%;
+  }
+  main {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #navigation a {
+    width: 11%;
+  }
+
+  #navigation {
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 100%;
+  }
+  main {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  #navigation a {
+    width: 11%;
+  }
+
+  #navigation {
+    position: fixed;
+  }
+}
+
+.app {
+  position: relative;
+  min-height: 100%;
+  background: white;
+}
+
+.mat-error {
+  background-color: rgba(46, 46, 46, 0.93);
+  text-align: center;
+}
+
+.success-message {
+  font-size: 1.8em;
+  color: #00bf14;
+}
+
+.title {
+  text-align: center;
+}

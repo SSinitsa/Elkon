@@ -1,0 +1,27 @@
+#screen-orientation {
+  background-color: #6f6f6f;
+  height: 360px;
+  width: 240px;
+}
+
+#screen-orientation img {
+  transform: scale(0.4);
+}
+
+/deep/ .mat-dialog-container {
+  height: 360px;
+  width: 240px;
+  background: transparent;
+}
+
+h1 {
+  font-size: 20px;
+  color: white;
+
+}
+
+#close-alert {
+  font-size: 4em;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+<div id="brands-container">
+  <h2>Каталог</h2>
+<div *ngIf="brands" id="brands">
+  <span class="brands-table" *ngFor="let brand of brands">
+    <img src={{getBrandUrl(brand)}} [routerLink]="['/product-brands/info', getBrandName(brand)]">
+  </span>
+</div>
+</div>

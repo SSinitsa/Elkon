@@ -1,0 +1,39 @@
+#brands-container {
+  background-color: #e1e1e1;
+  padding-bottom: 2em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 0.7em;
+  padding-top: 1.5em;
+  margin-bottom: 1em;
+  color: #5c7b30;
+  font-weight: bold;
+  border-top: 1px double;
+  border-color: #cacaca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#brands {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: white;
+}
+
+.brands-table {
+  display: inline-flex;
+  width: 17.5em;
+  height: 7em;
+}
+
+.brands-table img {
+  border: solid 1px;
+  border-color: #a4a4a4;
+  padding: 1em;
+  cursor: pointer;
+}

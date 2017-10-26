@@ -1,0 +1,8 @@
+<div id="vendors-container">
+<h2>Вендоры железа</h2>
+<div *ngIf="brands" id="vendors">
+  <ul *ngFor="let brand of brands">
+  <li><img class="brand-image" src={{getBrandUrl(brand)}} [routerLink]="['/vendor-brands/info', getBrandName(brand)]" /></li>
+</ul>
+</div>
+</div>

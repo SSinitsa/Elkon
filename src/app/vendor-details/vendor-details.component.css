@@ -1,0 +1,10 @@
+.vendor-image {
+  margin: auto;
+  height: 10em;
+  width: auto;
+}
+
+.vendor-description {
+  max-width: 100%;
+  height: auto;
+}

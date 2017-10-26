@@ -1,0 +1,33 @@
+<div id="header">
+  <a href="/"><img id="logo" src="../../assets/logo-1200.png"></a>
+  <div class="contact">
+    <h2 id="my-phone"> +375(29)773-82-77</h2>
+    <div id="callback" (click)="show()">
+      <i class="Phone is-animating"></i>
+      <h2 class="Phone-label"><a class="effect-4">Заказать обратный звонок</a></h2>
+    </div>
+  </div>
+  <form [@appearance]='state' class="callback-form">
+    <div class="mat-error" *ngIf="error"><span>{{error}}</span></div>
+    <div *ngIf="success" class="success-message"><span>{{success}}</span></div>
+    <div *ngIf="!success">
+      <mat-form-field class="form-field">
+        <input matInput [(ngModel)]="message.name" placeholder="Имя" required [ngModelOptions]="{standalone: true}">
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input type="tel" matInput [(ngModel)]="message.phone" placeholder="Телефон" required
+               [ngModelOptions]="{standalone: true}">
+      </mat-form-field>
+      <mat-form-field class="form-field">
+        <input matInput [(ngModel)]="message.email" placeholder="Email (по желанию)"
+               [ngModelOptions]="{standalone: true}">
+      </mat-form-field>
+      <mat-form-field class="message">
+        <textarea rows="4" matInput [(ngModel)]="message.message" placeholder="Сообщение (по желанию)"
+                  [ngModelOptions]="{standalone: true}"></textarea>
+      </mat-form-field>
+      <div id="control-buttons"><button class="submit" (click)="sendEmail()">ОТПРАВИТЬ</button>
+      <button class="close" (click)="hide()">ЗАКРЫТЬ</button></div>
+    </div>
+  </form>
+</div>

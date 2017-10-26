@@ -1,0 +1,9 @@
+#skype-button {
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  z-index: 10000;
+  opacity: 0.8;
+}
+
+
